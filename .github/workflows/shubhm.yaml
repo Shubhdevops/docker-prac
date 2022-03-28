@@ -23,8 +23,7 @@ jobs:
         distribution: 'adopt'
         cache: maven
         
-    - name: Building and pushing docker image 
-    - name: Set up QEMU
+    - name: Building and pushing docker image and Set up QEMU
       uses: docker/setup-qemu-action@v1
       
     - name: Set up Docker Buildx
