@@ -24,6 +24,12 @@ jobs:
         distribution: 'adopt'
         cache: maven
         
+    - name: maven command
+      run: |
+            mvn cleann install
+            mvn -B package --file pom.xml
+        
+        
     - name: Building and pushing docker image and Set up QEMU
       uses: docker/setup-qemu-action@v1
       
