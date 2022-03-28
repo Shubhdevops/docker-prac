@@ -26,7 +26,7 @@ jobs:
         
     - name: maven command
       run: |
-            mvn cleann install
+            mvn clean install
             mvn -B package --file pom.xml
         
         
