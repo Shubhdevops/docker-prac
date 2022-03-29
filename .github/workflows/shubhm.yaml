@@ -60,7 +60,8 @@ jobs:
       with:
         context: .
         push: true
-        tags: user/app:latest
+        tags: shubh101999/test
+        repository: shubh101999/test
         secrets: |
             GIT_AUTH_TOKEN=${{ secrets.MYTOKEN }}
                 
