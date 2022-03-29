@@ -35,7 +35,10 @@ jobs:
       with:
           name: github-actions-artifact
           path: hello
-          run : |
-                pwd
-                ls -l
+    
+    
+    - name: finding the directory
+      run: |
+           pwd hello
+           ls -l
                 
